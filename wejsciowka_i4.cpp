@@ -17,14 +17,14 @@ int main() {
       break;
     }
   }
-  for (k; k < 101; k++) {
+  for (; k < 101; k++) {
     suma[k] = "0";
   }
   liczba = "0";
   liczba.resize(103, '0');
-  for (int i = 0; i < suma.size(); i++) {
+  for (unsigned int i = 0; i < suma.size(); i++) {
     int j = 0;
-    for (int ii = 0; ii < suma[i].length(); ii++) {
+    for (unsigned int ii = 0; ii < suma[i].length(); ii++) {
       int ha = 0;
       switch (suma[i].at(suma[i].length() - 1 - ii)) {
       case '0': {
@@ -128,7 +128,7 @@ int main() {
     }
   }
   bool jusz = 0;
-  for (int i = 0; i < liczba.length(); i++) {
+  for (unsigned int i = 0; i < liczba.length(); i++) {
     if (liczba[liczba.length() - 1 - i] == '0' && !jusz) {
       continue;
     }
