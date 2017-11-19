@@ -24,37 +24,25 @@ int main() {
       int ha = 0;
       switch (suma[i].at(suma[i].length() - 1 - ii)) {
       case '0':
-        // liczba[j] += 0;
         goto jezelizero;
       case '1':
-        liczba[j] += 1;
-        goto jezelicyfra;
+        liczba[j]++;
       case '2':
-        // liczba[j]++;
-        liczba[j] += 2;
-        goto jezelicyfra;
+        liczba[j]++;
       case '3':
-        // liczba[j]++;
-        liczba[j] += 3;
-        goto jezelicyfra;
+        liczba[j]++;
       case '4':
-        liczba[j] += 4;
-        goto jezelicyfra;
+        liczba[j]++;
       case '5':
-        liczba[j] += 5;
-        goto jezelicyfra;
+        liczba[j]++;
       case '6':
-        liczba[j] += 6;
-        goto jezelicyfra;
+        liczba[j]++;
       case '7':
-        liczba[j] += 7;
-        goto jezelicyfra;
+        liczba[j]++;
       case '8':
-        liczba[j] += 8;
-        goto jezelicyfra;
+        liczba[j]++;
       case '9':
-        liczba[j] += 9;
-      jezelicyfra:
+        liczba[j]++;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
           liczba[ha + 1] += 1;
