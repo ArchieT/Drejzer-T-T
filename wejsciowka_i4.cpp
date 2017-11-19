@@ -27,12 +27,11 @@ int main() {
     for (unsigned int ii = 0; ii < suma[i].length(); ii++) {
       int ha = 0;
       switch (suma[i].at(suma[i].length() - 1 - ii)) {
-      case '0': {
+      case '0':
         liczba[j] += 0;
         j++;
         break;
-      }
-      case '1': {
+      case '1':
         liczba[j] += 1;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -41,8 +40,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '2': {
+      case '2':
         liczba[j] += 2;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -51,8 +49,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '3': {
+      case '3':
         liczba[j] += 3;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -61,8 +58,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '4': {
+      case '4':
         liczba[j] += 4;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -71,8 +67,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '5': {
+      case '5':
         liczba[j] += 5;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -81,8 +76,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '6': {
+      case '6':
         liczba[j] += 6;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -91,8 +85,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '7': {
+      case '7':
         liczba[j] += 7;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -101,8 +94,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '8': {
+      case '8':
         liczba[j] += 8;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -111,8 +103,7 @@ int main() {
         }
         j++;
         break;
-      }
-      case '9': {
+      case '9':
         liczba[j] += 9;
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
@@ -121,7 +112,6 @@ int main() {
         }
         j++;
         break;
-      }
       default:
         break;
       }
