@@ -28,92 +28,46 @@ int main() {
       int ha = 0;
       switch (suma[i].at(suma[i].length() - 1 - ii)) {
       case '0':
-        liczba[j] += 0;
-        j++;
-        break;
+        // liczba[j] += 0;
+        goto jezelizero;
       case '1':
         liczba[j] += 1;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '2':
+        // liczba[j]++;
         liczba[j] += 2;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '3':
+        // liczba[j]++;
         liczba[j] += 3;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '4':
         liczba[j] += 4;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '5':
         liczba[j] += 5;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '6':
         liczba[j] += 6;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '7':
         liczba[j] += 7;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '8':
         liczba[j] += 8;
-        while (liczba[ha] - '0' > 9) {
-          liczba[ha] -= 10;
-          liczba[ha + 1] += 1;
-          ha++;
-        }
-        j++;
-        break;
+        goto jezelicyfra;
       case '9':
         liczba[j] += 9;
+      jezelicyfra:
         while (liczba[ha] - '0' > 9) {
           liczba[ha] -= 10;
           liczba[ha + 1] += 1;
           ha++;
         }
+      jezelizero:
         j++;
-        break;
-      default:
-        break;
+        // default:
+        // break;
       }
     }
   }
