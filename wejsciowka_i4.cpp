@@ -9,17 +9,13 @@ int main() {
   string liczba;
   suma.resize(101);
   int k = 0;
-  while (1) {
+  do {
     cin >> liczba;
     suma[k] = liczba;
     k++;
-    if (liczba == "0") {
-      break;
-    }
-  }
-  for (; k < 101; k++) {
+  } while (liczba == "0");
+  for (; k < 101; k++)
     suma[k] = "0";
-  }
   liczba = "0";
   liczba.resize(103, '0');
   for (unsigned int i = 0; i < suma.size(); i++) {
@@ -73,10 +69,9 @@ int main() {
   }
   bool jusz = 0;
   for (unsigned int i = 0; i < liczba.length(); i++) {
-    if (liczba[liczba.length() - 1 - i] == '0' && !jusz) {
+    if (liczba[liczba.length() - 1 - i] == '0' && !jusz)
       continue;
-    }
-    jusz = 1;
+    jusz = true;
     cout << (int)(liczba[liczba.length() - 1 - i] - '0');
   }
   cout << endl << liczba << endl << (int)'#' << endl;
